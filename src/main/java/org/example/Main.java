@@ -18,11 +18,9 @@
                         gamma += delta;
                         System.out.println(GREEN + "Текущее gamma: " + gamma + RESET);
 
-
                         if (gamma < beta) {
                             System.out.println(RED + "Нужно больше!" + RESET);
                         }
-
                         // Защита от бесконечного цикла
                         if (gamma > beta - 0.0001) {
                             gamma = beta;
